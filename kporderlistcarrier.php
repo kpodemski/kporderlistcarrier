@@ -77,7 +77,7 @@ class KpOrderListCarrier extends Module
      */
     public function hookActionOrderGridQueryBuilderModifier(array $params)
     {
-        /** @var \PrestaShop\PrestaShop\Core\Grid\Query\QueryBuilder $queryBuilder */
+        /** @var \Doctrine\DBAL\Query\QueryBuilder $queryBuilder */
         $queryBuilder = $params['search_query_builder'];
 
         /** @var \PrestaShop\PrestaShop\Core\Grid\Search\SearchCriteriaInterface */
